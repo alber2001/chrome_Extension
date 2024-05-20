@@ -1,0 +1,21 @@
+/* Importar Bootstrap */
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+/* Personalizar el tamaño de fuente */
+body {
+  font-size: 14px; /* Cambia el tamaño de fuente del cuerpo del documento */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em; /* Cambia el tamaño de fuente de los encabezados */
+}
+
+p {
+  font-size: 0.875em; /* Cambia el tamaño de fuente de los párrafos */
+}
+
+.container {
+  font-size: 0.875em; /* Cambia el tamaño de fuente de los elementos dentro del contenedor */
+}
+
+/* También puedes especificar el tamaño de fuente para elementos específicos de Bootstrap si es necesario */
