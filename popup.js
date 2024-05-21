@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  function hola() {
-    alert("¡Hola!");
-    chrome.tabs.create({ url: "https://wa.me/50432323507" });
+  function hola() {    
+    chrome.tabs.create({ url: "https://web.whatsapp.com/send?phone=50432323507"});
   }
     
