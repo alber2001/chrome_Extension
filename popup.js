@@ -24,6 +24,17 @@ document.addEventListener('DOMContentLoaded', function() {
       phoneNumbers = phoneNumbersInput.value.split(';').map(num => num.trim());
       message = encodeURIComponent(messageInput.value.trim()); // Codificar el mensaje para URL
 
+      // Verificar si los campos están vacíos
+      if (phoneNumbers.length === 0 || phoneNumbers[0] === "") {
+          alert("Por favor, ingrese al menos un número de teléfono.");
+          return;
+      }
+
+      if (message === "") {
+          alert("Por favor, ingrese un mensaje.");
+          return;
+      }
+
       if (phoneNumbers.length > 0) {
           var firstPhone = phoneNumbers.shift(); // Obtener el primer número
           var url = `https://web.whatsapp.com/send?phone=${firstPhone}&text=${message}`;
