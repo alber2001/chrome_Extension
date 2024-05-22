@@ -6,6 +6,6 @@
     "permissions": ["tabs"],    
     "action": {
       "default_popup": "hello.html",
-      "default_icon": "sms.png"
+      "default_icon": "message.png"
     }
   }

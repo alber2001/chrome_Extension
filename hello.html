@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Extension de Chrome</title>
-    <!-- Enlazar Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <!-- Enlazar tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="m-2">
-      <div class="card">
-        <div class="card-header">
-          Ingrese lista de numeros de telefono
+        <div class="card">
+            <div class="card-header">Ingrese lista de números de teléfono</div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="phoneNumbers">Ingrese sus números separados por punto y coma</label>
+                        <input type="text" id="phoneNumbers" class="form-control" placeholder="Números" aria-label="Números" aria-describedby="basic-addon1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ingrese su mensaje de texto</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button id="sendButton" class="btn btn-success">Enviar</button>
+                        <button id="pauseButton" class="btn btn-warning">Pausar</button>
+                        <button id="stopButton" class="btn btn-danger">Detener</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="card-body">
-          <form action="">
-            <div class="form-group">
-            <label for="">Ingrese sus números separados por punto y coma</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Números"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-          <div class="form-group">
-            <label for="">Ingrese su mensaje de texto</label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-          <div class="form-group">
-            <button id="helloButton" class="btn btn-success">Enviar</button>
-          </div>
-        </div>
-      </form>
-      </div>
     </div>
-    <!-- Importar el archivo JS (popup.js) después del contenido para asegurar que todos los elementos estén disponibles -->
     <script src="popup.js"></script>
-  </body>
+</body>
 </html>
+
