@@ -4,8 +4,8 @@
 /* Personalizar el tamaño de fuente */
 body {
   font-size: 14px; /* Cambia el tamaño de fuente del cuerpo del documento */
-  width: 600px; /* Ajusta el ancho según lo necesario */
-  height: 400px; /* Ajusta la altura según lo necesario */  
+  width: 400px; /* Ajusta el ancho según lo necesario */
+  height: 500px; /* Ajusta la altura según lo necesario */  
   
 }
 
